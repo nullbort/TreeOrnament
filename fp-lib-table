@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name Battery_Holders)(type KiCad)(uri /home/nullbort/KiCad/library/Battery_Holders.pretty)(options "")(descr ""))
+  (lib (name logo)(type KiCad)(uri /home/nullbort/KiCad/library/logo.pretty)(options "")(descr ""))
+  (lib (name Buttons_Switches_SMD)(type Github)(uri "$(KIGITHUB)/Buttons_Switches_SMD.pretty")(options "")(descr ""))
+  (lib (name BHX2-2032)(type KiCad)(uri /home/nullbort/KiCad/library/BHX2-2032.pretty)(options "")(descr ""))
+  (lib (name MMBT3904LT1G)(type Legacy)(uri /home/nullbort/KiCad/library/BHX2-2032.pretty/MMBT3904LT1G.mod)(options "")(descr ""))
+  (lib (name ATTiny85)(type KiCad)(uri "$(KIPRJMOD)/ATTiny85.pretty")(options "")(descr ""))
+)
