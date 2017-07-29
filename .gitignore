@@ -6,3 +6,5 @@ GERBER/
 *.bak
 
 *.kicad_pcb-bak
+
+output - 1\.png
