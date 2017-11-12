@@ -1,35 +1,4 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:custom
-LIBS:switches
+EESchema Schematic File Version 4
 LIBS:TreeOrnamentV2-cache
 EELAYER 26 0
 EELAYER END
@@ -46,18 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Battery_Cell BT1
-U 1 1 58B89C6D
-P 1325 3450
-F 0 "BT1" H 1425 3550 50  0000 L CNN
-F 1 "Battery_Cell" H 1425 3450 50  0000 L CNN
-F 2 "Battery_Holders:Keystone_3002_1x2032-CoinCell" V 1325 3510 50  0001 C CNN
-F 3 "" V 1325 3510 50  0001 C CNN
-	1    1325 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR01
+L TreeOrnamentV2-rescue:GND-RESCUE-TreeOrnamentV2 #PWR01
 U 1 1 58B89D01
 P 1325 4000
 F 0 "#PWR01" H 1325 3750 50  0001 C CNN
@@ -70,18 +28,7 @@ $EndComp
 Text Label 1325 2725 0    60   ~ 0
 VCC
 $Comp
-L PWR_FLAG #FLG02
-U 1 1 58B8F65A
-P 1325 3875
-F 0 "#FLG02" H 1325 3950 50  0001 C CNN
-F 1 "PWR_FLAG" H 1325 4025 50  0000 C CNN
-F 2 "" H 1325 3875 50  0001 C CNN
-F 3 "" H 1325 3875 50  0001 C CNN
-	1    1325 3875
-	0    -1   -1   0   
-$EndComp
-$Comp
-L SW_SPDT SW1
+L Switch:SW_SPDT SW1
 U 1 1 58C42CFA
 P 2775 2625
 F 0 "SW1" H 2775 2910 50  0000 C CNN
@@ -94,7 +41,7 @@ $EndComp
 Text Label 2375 2625 0    60   ~ 0
 VCC
 $Comp
-L ATTINY85-20SU U1
+L atmel:ATTINY85-20SU U1
 U 1 1 58CB39BC
 P 5100 3425
 F 0 "U1" V 5146 3045 50  0000 R CNN
@@ -105,18 +52,7 @@ F 3 "" H 5100 3425 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR03
-U 1 1 58CB3AC1
-P 3750 3175
-F 0 "#PWR03" H 3750 2925 50  0001 C CNN
-F 1 "GND" V 3755 3047 50  0000 R CNN
-F 2 "" H 3750 3175 50  0001 C CNN
-F 3 "" H 3750 3175 50  0001 C CNN
-	1    3750 3175
-	0    1    1    0   
-$EndComp
-$Comp
-L LED D2
+L device:LED D2
 U 1 1 58CB428C
 P 7775 3850
 F 0 "D2" V 7695 3695 50  0000 C CNN
@@ -127,7 +63,7 @@ F 3 "" H 7775 3850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D8
+L device:LED D8
 U 1 1 58CB43C2
 P 8325 3850
 F 0 "D8" V 8245 3690 50  0000 C CNN
@@ -138,7 +74,7 @@ F 3 "" H 8325 3850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R2
+L device:R R2
 U 1 1 58CB44CF
 P 7775 3550
 F 0 "R2" H 7655 3530 50  0000 C CNN
@@ -149,7 +85,7 @@ F 3 "" H 7775 3550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D3
+L device:LED D3
 U 1 1 58CB4A28
 P 7775 4825
 F 0 "D3" V 7695 4665 50  0000 C CNN
@@ -160,7 +96,7 @@ F 3 "" H 7775 4825 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D9
+L device:LED D9
 U 1 1 58CB4A2E
 P 8325 4825
 F 0 "D9" V 8250 4660 50  0000 C CNN
@@ -171,7 +107,7 @@ F 3 "" H 8325 4825 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R3
+L device:R R3
 U 1 1 58CB4A34
 P 7775 4525
 F 0 "R3" H 7655 4495 50  0000 C CNN
@@ -182,7 +118,7 @@ F 3 "" H 7775 4525 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D4
+L device:LED D4
 U 1 1 58CB4A40
 P 10325 2850
 F 0 "D4" V 10240 2690 50  0000 C CNN
@@ -193,7 +129,7 @@ F 3 "" H 10325 2850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D10
+L device:LED D10
 U 1 1 58CB4A46
 P 10875 2850
 F 0 "D10" V 10795 2680 50  0000 C CNN
@@ -204,7 +140,7 @@ F 3 "" H 10875 2850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R4
+L device:R R4
 U 1 1 58CB4A4E
 P 10325 2550
 F 0 "R4" H 10215 2515 50  0000 C CNN
@@ -215,7 +151,7 @@ F 3 "" H 10325 2550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D5
+L device:LED D5
 U 1 1 58CB4F2B
 P 10325 3850
 F 0 "D5" V 10245 3685 50  0000 C CNN
@@ -226,7 +162,7 @@ F 3 "" H 10325 3850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D11
+L device:LED D11
 U 1 1 58CB4F31
 P 10875 3850
 F 0 "D11" V 10795 3690 50  0000 C CNN
@@ -237,7 +173,7 @@ F 3 "" H 10875 3850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R5
+L device:R R5
 U 1 1 58CB4F37
 P 10325 3550
 F 0 "R5" H 10205 3525 50  0000 C CNN
@@ -248,7 +184,7 @@ F 3 "" H 10325 3550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D6
+L device:LED D6
 U 1 1 58CB4F43
 P 10325 4825
 F 0 "D6" V 10245 4660 50  0000 C CNN
@@ -259,7 +195,7 @@ F 3 "" H 10325 4825 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D12
+L device:LED D12
 U 1 1 58CB4F49
 P 10875 4825
 F 0 "D12" V 10790 4650 50  0000 C CNN
@@ -270,7 +206,7 @@ F 3 "" H 10875 4825 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R6
+L device:R R6
 U 1 1 58CB4F51
 P 10325 4525
 F 0 "R6" H 10195 4495 50  0000 C CNN
@@ -281,7 +217,7 @@ F 3 "" H 10325 4525 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR04
+L power:GND #PWR04
 U 1 1 58D5F707
 P 8825 4000
 F 0 "#PWR04" H 8825 3750 50  0001 C CNN
@@ -294,7 +230,7 @@ $EndComp
 Text Label 7450 3370 0    60   ~ 0
 Pin2
 $Comp
-L GND #PWR05
+L power:GND #PWR05
 U 1 1 58D5FE02
 P 8825 4975
 F 0 "#PWR05" H 8825 4725 50  0001 C CNN
@@ -307,7 +243,7 @@ $EndComp
 Text Label 7450 4350 0    60   ~ 0
 Pin3
 $Comp
-L GND #PWR06
+L power:GND #PWR06
 U 1 1 58D5FE25
 P 11375 3000
 F 0 "#PWR06" H 11375 2750 50  0001 C CNN
@@ -320,7 +256,7 @@ $EndComp
 Text Label 10000 2375 0    60   ~ 0
 Pin4
 $Comp
-L GND #PWR07
+L power:GND #PWR07
 U 1 1 58D60118
 P 11375 4000
 F 0 "#PWR07" H 11375 3750 50  0001 C CNN
@@ -333,7 +269,7 @@ $EndComp
 Text Label 10000 3375 0    60   ~ 0
 Pin5
 $Comp
-L GND #PWR08
+L power:GND #PWR08
 U 1 1 58D60B64
 P 11375 4975
 F 0 "#PWR08" H 11375 4725 50  0001 C CNN
@@ -356,7 +292,7 @@ Pin5
 Text Label 6825 4625 0    60   ~ 0
 Pin6
 $Comp
-L R R8
+L device:R R8
 U 1 1 58D6513F
 P 8325 3550
 F 0 "R8" H 8395 3596 50  0000 L CNN
@@ -367,7 +303,7 @@ F 3 "" H 8325 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R9
+L device:R R9
 U 1 1 58D65D55
 P 8325 4525
 F 0 "R9" H 8395 4571 50  0000 L CNN
@@ -378,7 +314,7 @@ F 3 "" H 8325 4525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R10
+L device:R R10
 U 1 1 58D66545
 P 10875 2550
 F 0 "R10" H 10945 2596 50  0000 L CNN
@@ -392,7 +328,6 @@ Wire Wire Line
 	1325 3250 1325 2725
 Wire Wire Line
 	1325 3550 1325 4000
-Connection ~ 1325 3875
 Wire Wire Line
 	2375 2625 2575 2625
 Wire Wire Line
@@ -515,7 +450,7 @@ Wire Wire Line
 	10325 3400 10325 3375
 Connection ~ 10325 3375
 $Comp
-L R R11
+L device:R R11
 U 1 1 58D66B3C
 P 10875 3550
 F 0 "R11" H 10945 3596 50  0000 L CNN
@@ -531,7 +466,7 @@ Wire Wire Line
 	10325 4375 10325 4355
 Connection ~ 10325 4355
 $Comp
-L R R12
+L device:R R12
 U 1 1 58D670E4
 P 10875 4525
 F 0 "R12" H 10945 4571 50  0000 L CNN
@@ -543,4 +478,26 @@ F 3 "" H 10875 4525 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10875 4355 10875 4375
+$Comp
+L power:GND #PWR02
+U 1 1 5A07A38D
+P 3750 3175
+F 0 "#PWR02" H 3750 2925 50  0001 C CNN
+F 1 "GND" V 3755 3047 50  0000 R CNN
+F 2 "" H 3750 3175 50  0001 C CNN
+F 3 "" H 3750 3175 50  0001 C CNN
+	1    3750 3175
+	0    1    1    0   
+$EndComp
+$Comp
+L device:Battery_Cell BT1
+U 1 1 5A07A5E9
+P 1325 3450
+F 0 "BT1" H 1443 3546 50  0000 L CNN
+F 1 "Battery_Cell" H 1443 3455 50  0000 L CNN
+F 2 "" V 1325 3510 50  0001 C CNN
+F 3 "" V 1325 3510 50  0001 C CNN
+	1    1325 3450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
