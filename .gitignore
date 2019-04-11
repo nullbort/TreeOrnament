@@ -8,3 +8,5 @@ GERBER/
 *.kicad_pcb-bak
 
 output - 1\.png
+
+*.dcm
